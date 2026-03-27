@@ -103,7 +103,7 @@ export function RoleSelectionScreen() {
         <p className="text-muted-foreground">
           Already have an account?{' '}
           <button 
-            onClick={() => setCurrentScreen('home')}
+            onClick={() => setCurrentScreen('login')}
             className="font-semibold text-primary"
           >
             Log in

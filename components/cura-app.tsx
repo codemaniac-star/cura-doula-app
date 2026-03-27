@@ -3,12 +3,14 @@
 import { useApp } from '@/lib/app-context';
 import { SplashScreen } from './screens/splash-screen';
 import { OnboardingScreen } from './screens/onboarding-screen';
+import { LoginScreen } from './screens/login-screen';
 import { RoleSelectionScreen } from './screens/role-selection-screen';
 import { DueDateScreen } from './screens/due-date-screen';
 import { LocationScreen } from './screens/location-screen';
 import { BudgetScreen } from './screens/budget-screen';
 import { PreferencesScreen } from './screens/preferences-screen';
 import { HomeScreen } from './screens/home-screen';
+import { DoulaHomeScreen } from './screens/doula-home-screen';
 import { SearchScreen } from './screens/search-screen';
 import { DoulaProfileScreen } from './screens/doula-profile-screen';
 import { BookingScreen } from './screens/booking-screen';
@@ -28,6 +30,8 @@ export function CuraApp() {
         return <SplashScreen />;
       case 'onboarding':
         return <OnboardingScreen />;
+      case 'login':
+        return <LoginScreen />;
       case 'role-selection':
         return <RoleSelectionScreen />;
       case 'due-date':
@@ -40,6 +44,8 @@ export function CuraApp() {
         return <PreferencesScreen />;
       case 'home':
         return <HomeScreen />;
+      case 'doula-home':
+        return <DoulaHomeScreen />;
       case 'search':
         return <SearchScreen />;
       case 'doula-profile':

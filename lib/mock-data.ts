@@ -1,4 +1,30 @@
-import type { Doula, Post, Message } from './types';
+import type { Doula, Post, Message, User } from './types';
+
+// Test users for authentication
+export const testUsers: { email: string; password: string; user: User }[] = [
+  {
+    email: 'mother@test.com',
+    password: 'password123',
+    user: {
+      id: 'user-1',
+      name: 'Sarah Johnson',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face',
+      role: 'mother',
+      location: 'Nairobi, Kenya',
+    },
+  },
+  {
+    email: 'doula@test.com',
+    password: 'password123',
+    user: {
+      id: 'user-2',
+      name: 'Grace Wanjiru',
+      image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&h=200&fit=crop&crop=face',
+      role: 'doula',
+      location: 'Westlands, Nairobi',
+    },
+  },
+];
 
 export const mockDoulas: Doula[] = [
   {
