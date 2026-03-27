@@ -14,7 +14,12 @@ const menuItems = [
 ];
 
 export function ProfileScreen() {
-  const { user, setCurrentScreen } = useApp();
+  const { user, setCurrentScreen, setUser } = useApp();
+
+  const handleLogout = () => {
+    setUser(null);
+    setCurrentScreen('splash');
+  };
 
   return (
     <div className="flex h-full min-h-screen flex-col bg-[#F8F9FA]">
@@ -107,7 +112,7 @@ export function ProfileScreen() {
 
         {/* Logout */}
         <button
-          onClick={() => setCurrentScreen('splash')}
+          onClick={handleLogout}
           className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-50 py-4 text-red-500"
         >
           <LogOut className="h-5 w-5" />
