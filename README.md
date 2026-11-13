@@ -1,6 +1,6 @@
 # cura-doula-app
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+This was my first shipped system, the flaws were evident but this project taught me more than I ever learn't in my Software Engineering Career.
 Link: https://v0-cura-doula-app.vercel.app/
 
 [Continue working on v0 →](https://v0.app/chat/projects/prj_PiLG18RWGOKu7k2PeUsKumclbzoq)
