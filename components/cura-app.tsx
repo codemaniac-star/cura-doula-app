@@ -68,7 +68,7 @@ export function CuraApp() {
   };
 
   return (
-    <div className="relative mx-auto h-screen max-w-md overflow-hidden bg-background shadow-2xl">
+    <div className="relative h-full w-full overflow-hidden bg-background">
       <div className="h-full overflow-y-auto pb-20">
         {renderScreen()}
       </div>
